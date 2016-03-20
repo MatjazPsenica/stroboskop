@@ -26,8 +26,8 @@ window.addEventListener('load', function() {
 		
 	//Stroboskop
 	var vrednosti = [];
-	var minCas = document.querySelector("#min").value;
-	var	maxCas = document.querySelector("#max").value;
+	var minCas = document.querySelector("#min").value;;
+	var		maxCas = document.querySelector("#max").value;;
 	var ustavi = false;
 	
 	var spremeniBarvo = function(id) {
@@ -37,7 +37,7 @@ window.addEventListener('load', function() {
 			ustavi = false;
 		} else {
 		var novId = (id+1) % vrednosti.length;
-		var	timeout = Math.floor((Math.random() * (maxCas-minCas)) + minCas);
+		var		timeout = Math.floor((Math.random() * (maxCas-minCas)) + minCas);
 			setTimeout(function() {spremeniBarvo(novId)} , timeout);
 		}		
 	}
